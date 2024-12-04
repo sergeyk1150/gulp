@@ -1,0 +1,9 @@
+@use './variables.scss';
+.btn {
+    padding: 20px 30px;
+    font-family: variables.$font-base;
+    line-height: 24px;
+    background-color: variables.$btn-bg-color;
+    border: none;
+    color: variables.$color;
+}

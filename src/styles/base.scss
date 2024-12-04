@@ -1,0 +1,48 @@
+@use './variables.scss';
+@use './mixin.scss';
+@include mixin.font-face(variables.$font-base, '/fonts/Poppins-Regular.ttf');
+@include mixin.font-face(variables.$font-headline, '/fonts/PlayfairDisplay-Bold.ttf');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: variables.$font-base;
+    color: variables.$color;
+}
+
+.container {
+    max-width: 1320px;
+    height: 583px;
+    margin: 0 auto;
+}
+.contacts {
+    background-color: #19161B;
+    padding: 74px 20px 116px 20px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 64px;
+    }
+}
+
+@media (max-width: 1190px) {
+
+    .contacts {
+        &__container {
+            display: block;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contacts {
+        padding: 20px;
+    }
+}
+

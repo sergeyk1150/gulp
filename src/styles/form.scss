@@ -1,0 +1,35 @@
+@use './variables.scss';
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    &__input {
+        flex-grow: 1;
+        padding: 14px 32px;
+        border: 1px solid rgba(255,255,255, .1);
+        background-color: transparent;
+        font-family: variables.$font-base;
+        line-height: 28px;
+        color: variables.$color;
+        &::placeholder {
+            color: variables.$color;
+        }
+    }
+    &__message {
+        margin-top: -8px;
+        width: 100%;
+        padding: 14px 32px;
+        border: 1px solid rgba(255,255,255, .1);
+        background-color: transparent;
+        font-family: variables.$font-base;
+        line-height: 28px;
+        color: variables.$color;
+        resize: none;
+        
+        &::placeholder {
+            color: variables.$color;
+            font-family: variables.$font-base;
+        }
+    }
+}
